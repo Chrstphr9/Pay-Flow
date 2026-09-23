@@ -48,83 +48,322 @@
   --radius-4xl: calc(var(--radius) * 2.6);
 }
 
+/* Light Mode - PayFlow Design System */
 :root {
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.145 0 0);
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.145 0 0);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.145 0 0);
-  --primary: oklch(0.205 0 0);
-  --primary-foreground: oklch(0.985 0 0);
-  --secondary: oklch(0.97 0 0);
-  --secondary-foreground: oklch(0.205 0 0);
-  --muted: oklch(0.97 0 0);
-  --muted-foreground: oklch(0.556 0 0);
-  --accent: oklch(0.97 0 0);
-  --accent-foreground: oklch(0.205 0 0);
-  --destructive: oklch(0.577 0.245 27.325);
-  --border: oklch(0.922 0 0);
-  --input: oklch(0.922 0 0);
-  --ring: oklch(0.708 0 0);
-  --chart-1: oklch(0.87 0 0);
-  --chart-2: oklch(0.556 0 0);
-  --chart-3: oklch(0.439 0 0);
-  --chart-4: oklch(0.371 0 0);
-  --chart-5: oklch(0.269 0 0);
-  --radius: 0.625rem;
-  --sidebar: oklch(0.985 0 0);
-  --sidebar-foreground: oklch(0.145 0 0);
-  --sidebar-primary: oklch(0.205 0 0);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.97 0 0);
-  --sidebar-accent-foreground: oklch(0.205 0 0);
-  --sidebar-border: oklch(0.922 0 0);
-  --sidebar-ring: oklch(0.708 0 0);
+  /* PayFlow Brand Colors */
+  --payflow-dark: #36454F;         /* Dark Blue-Gray - Primary Dark */
+  --payflow-light: #B2BEB5;        /* Light Gray-Green - Secondary */
+  --payflow-blue: #7393B3;         /* Soft Blue - Accent */
+  --payflow-orange: #FF9620;       /* Orange - Primary Action/CTA */
+
+  /* Light Mode Backgrounds */
+  --background: #FFFFFF;           /* White background */
+  --foreground: #36454F;           /* Dark text */
+  --card: #FFFFFF;                 /* White cards */
+  --card-foreground: #36454F;      /* Dark text on cards */
+  --popover: #FFFFFF;
+  --popover-foreground: #36454F;
+
+  /* PayFlow Primary Color - ORANGE (Main CTA) */
+  --primary: #FF9620;              /* Orange - Primary Action */
+  --primary-foreground: #FFFFFF;   /* White text on orange */
+
+  /* PayFlow Secondary Color - Dark Gray */
+  --secondary: #36454F;            /* Dark Blue-Gray - Secondary */
+  --secondary-foreground: #FFFFFF; /* White text on dark */
+
+  /* Muted Elements */
+  --muted: #F5F5F5;                /* Very light gray */
+  --muted-foreground: #7393B3;     /* Soft blue for muted text */
+
+  /* Accent Color - Soft Blue */
+  --accent: #7393B3;               /* Soft Blue - Links & Accents */
+  --accent-foreground: #FFFFFF;
+
+  /* Destructive - Keep as warning red */
+  --destructive: #DC2626;          /* Red for errors/destructive */
+
+  /* Borders & Input */
+  --border: #E5E7EB;               /* Light gray borders */
+  --input: #F9FAFB;                /* Light input backgrounds */
+  --ring: #FF9620;                 /* Orange focus ring */
+
+  /* Chart Colors - PayFlow Palette */
+  --chart-1: #FF9620;              /* Orange - Primary */
+  --chart-2: #7393B3;              /* Blue - Accent */
+  --chart-3: #36454F;              /* Dark - Emphasis */
+  --chart-4: #B2BEB5;              /* Light Gray - Secondary */
+  --chart-5: #D1D5DB;              /* Light Gray - Tertiary */
+
+  /* Sidebar - Dark Theme */
+  --sidebar: #36454F;              /* Dark Blue-Gray */
+  --sidebar-foreground: #FFFFFF;   /* White text */
+  --sidebar-primary: #FF9620;      /* Orange accent */
+  --sidebar-primary-foreground: #FFFFFF;
+  --sidebar-accent: #7393B3;       /* Blue secondary */
+  --sidebar-accent-foreground: #FFFFFF;
+  --sidebar-border: #2D3748;       /* Darker border */
+  --sidebar-ring: #FF9620;         /* Orange ring */
+
+  --radius: 0.5rem;
 }
 
+/* Dark Mode - PayFlow Design System */
 .dark {
-  --background: oklch(0.145 0 0);
-  --foreground: oklch(0.985 0 0);
-  --card: oklch(0.205 0 0);
-  --card-foreground: oklch(0.985 0 0);
-  --popover: oklch(0.205 0 0);
-  --popover-foreground: oklch(0.985 0 0);
-  --primary: oklch(0.922 0 0);
-  --primary-foreground: oklch(0.205 0 0);
-  --secondary: oklch(0.269 0 0);
-  --secondary-foreground: oklch(0.985 0 0);
-  --muted: oklch(0.269 0 0);
-  --muted-foreground: oklch(0.708 0 0);
-  --accent: oklch(0.269 0 0);
-  --accent-foreground: oklch(0.985 0 0);
-  --destructive: oklch(0.704 0.191 22.216);
-  --border: oklch(1 0 0 / 10%);
-  --input: oklch(1 0 0 / 15%);
-  --ring: oklch(0.556 0 0);
-  --chart-1: oklch(0.87 0 0);
-  --chart-2: oklch(0.556 0 0);
-  --chart-3: oklch(0.439 0 0);
-  --chart-4: oklch(0.371 0 0);
-  --chart-5: oklch(0.269 0 0);
-  --sidebar: oklch(0.205 0 0);
-  --sidebar-foreground: oklch(0.985 0 0);
-  --sidebar-primary: oklch(0.488 0.243 264.376);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.269 0 0);
-  --sidebar-accent-foreground: oklch(0.985 0 0);
-  --sidebar-border: oklch(1 0 0 / 10%);
-  --sidebar-ring: oklch(0.556 0 0);
+  /* PayFlow Brand Colors */
+  --payflow-dark: #2D3748;         /* Darker for dark mode */
+  --payflow-light: #D1D5DB;        /* Lighter for contrast */
+  --payflow-blue: #93C5FD;         /* Lighter blue */
+  --payflow-orange: #FF9620;       /* Orange stays same */
+
+  /* Dark Mode Backgrounds */
+  --background: #0F172A;           /* Very dark background */
+  --foreground: #F1F5F9;           /* Light text */
+  --card: #1E293B;                 /* Dark card */
+  --card-foreground: #F1F5F9;      /* Light text on dark cards */
+  --popover: #1E293B;
+  --popover-foreground: #F1F5F9;
+
+  /* PayFlow Primary Color - ORANGE (Main CTA) */
+  --primary: #FF9620;              /* Orange stays prominent */
+  --primary-foreground: #0F172A;   /* Dark text on orange */
+
+  /* PayFlow Secondary Color - Light */
+  --secondary: #D1D5DB;            /* Light gray for contrast */
+  --secondary-foreground: #0F172A; /* Dark text on light */
+
+  /* Muted Elements */
+  --muted: #334155;                /* Dark gray */
+  --muted-foreground: #93C5FD;     /* Light blue for muted text */
+
+  /* Accent Color - Light Blue */
+  --accent: #93C5FD;               /* Light Blue - Accents */
+  --accent-foreground: #0F172A;
+
+  /* Destructive */
+  --destructive: #F87171;          /* Light red for dark mode */
+
+  /* Borders & Input */
+  --border: #334155;               /* Dark borders */
+  --input: #1E293B;                /* Dark input */
+  --ring: #FF9620;                 /* Orange ring */
+
+  /* Chart Colors - Adjusted for Dark Mode */
+  --chart-1: #FF9620;              /* Orange */
+  --chart-2: #93C5FD;              /* Light Blue */
+  --chart-3: #D1D5DB;              /* Light Gray */
+  --chart-4: #64748B;              /* Medium Gray */
+  --chart-5: #475569;              /* Darker Gray */
+
+  /* Sidebar - Dark Theme */
+  --sidebar: #1E293B;              /* Dark background */
+  --sidebar-foreground: #F1F5F9;   /* Light text */
+  --sidebar-primary: #FF9620;      /* Orange stays primary */
+  --sidebar-primary-foreground: #0F172A;
+  --sidebar-accent: #93C5FD;       /* Light blue */
+  --sidebar-accent-foreground: #0F172A;
+  --sidebar-border: #334155;       /* Dark border */
+  --sidebar-ring: #FF9620;         /* Orange ring */
 }
 
 @layer base {
   * {
     @apply border-border outline-ring/50;
   }
+
   body {
     @apply bg-background text-foreground;
   }
+
   html {
     @apply font-sans;
+  }
+
+  /* Headings */
+  h1, h2, h3, h4, h5, h6 {
+    @apply text-foreground font-bold;
+  }
+
+  h1 {
+    @apply text-4xl;
+  }
+
+  h2 {
+    @apply text-3xl;
+  }
+
+  h3 {
+    @apply text-2xl;
+  }
+
+  h4 {
+    @apply text-xl;
+  }
+
+  h5, h6 {
+    @apply text-lg;
+  }
+
+  /* Links */
+  a {
+    @apply text-accent hover:text-accent/80 transition-colors;
+  }
+
+  /* Form inputs */
+  input:focus,
+  textarea:focus,
+  select:focus {
+    @apply outline-none ring-2 ring-ring;
+  }
+}
+
+@layer components {
+  /* PayFlow Brand Color Utilities */
+  .bg-payflow-dark {
+    @apply bg-[#36454F];
+  }
+
+  .bg-payflow-light {
+    @apply bg-[#B2BEB5];
+  }
+
+  .bg-payflow-blue {
+    @apply bg-[#7393B3];
+  }
+
+  .bg-payflow-orange {
+    @apply bg-[#FF9620];
+  }
+
+  .text-payflow-dark {
+    @apply text-[#36454F];
+  }
+
+  .text-payflow-light {
+    @apply text-[#B2BEB5];
+  }
+
+  .text-payflow-blue {
+    @apply text-[#7393B3];
+  }
+
+  .text-payflow-orange {
+    @apply text-[#FF9620];
+  }
+
+  .border-payflow-dark {
+    @apply border-[#36454F];
+  }
+
+  .border-payflow-light {
+    @apply border-[#B2BEB5];
+  }
+
+  .border-payflow-blue {
+    @apply border-[#7393B3];
+  }
+
+  .border-payflow-orange {
+    @apply border-[#FF9620];
+  }
+
+  /* PayFlow Button Styles */
+  .btn-payflow-primary {
+    @apply bg-[#FF9620] text-white hover:bg-[#E68617] transition-colors;
+  }
+
+  .btn-payflow-secondary {
+    @apply bg-[#36454F] text-white hover:bg-[#2D3748] transition-colors;
+  }
+
+  .btn-payflow-outline {
+    @apply border-2 border-[#36454F] text-[#36454F] hover:bg-[#36454F]/10 transition-colors;
+  }
+
+  /* PayFlow Badge Styles */
+  .badge-payflow-success {
+    @apply bg-green-100 text-green-800;
+  }
+
+  .badge-payflow-warning {
+    @apply bg-[#FF9620]/20 text-[#FF9620];
+  }
+
+  .badge-payflow-danger {
+    @apply bg-red-100 text-red-800;
+  }
+
+  .badge-payflow-info {
+    @apply bg-[#7393B3]/20 text-[#7393B3];
+  }
+
+  /* PayFlow Card */
+  .card-payflow {
+    @apply bg-white rounded-lg shadow-md border border-[#E5E7EB] p-6;
+  }
+
+  .dark .card-payflow {
+    @apply bg-[#1E293B] border-[#334155];
+  }
+
+  /* PayFlow Sidebar */
+  .sidebar-payflow {
+    @apply bg-[#36454F] text-white;
+  }
+
+  .dark .sidebar-payflow {
+    @apply bg-[#1E293B];
+  }
+
+  /* PayFlow Form Input */
+  .input-payflow {
+    @apply w-full px-4 py-2 rounded-lg border border-[#E5E7EB] bg-white text-[#36454F] placeholder-[#B2BEB5] focus:outline-none focus:ring-2 focus:ring-[#FF9620] focus:border-transparent transition-all;
+  }
+
+  .dark .input-payflow {
+    @apply bg-[#1E293B] border-[#334155] text-white placeholder-[#93C5FD];
+  }
+
+  /* PayFlow Gradient (for hero sections) */
+  .gradient-payflow {
+    @apply bg-gradient-to-br from-[#36454F] via-[#2D3748] to-[#1A202C];
+  }
+
+  /* PayFlow Accent Text */
+  .text-accent-payflow {
+    @apply text-[#FF9620] font-semibold;
+  }
+
+  /* PayFlow Divider */
+  .divider-payflow {
+    @apply border-t border-[#E5E7EB];
+  }
+
+  .dark .divider-payflow {
+    @apply border-[#334155];
+  }
+}
+
+/* Smooth transitions */
+* {
+  @apply transition-colors duration-200;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  @apply w-2;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-[#B2BEB5] rounded-full hover:bg-[#7393B3];
+}
+
+.dark {
+  ::-webkit-scrollbar-thumb {
+    @apply bg-[#475569] hover:bg-[#64748B];
   }
 }
