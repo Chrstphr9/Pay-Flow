@@ -367,3 +367,18 @@
     @apply bg-[#475569] hover:bg-[#64748B];
   }
 }
+
+/* Add to your existing globals.css — only include classes not already defined
+   in GLOBALS-CSS-IMPLEMENTATION-GUIDE.md */
+
+   .btn-payflow-outline {
+    border: 1px solid #b2beb570;
+    background: white;
+    color: #36454f;
+    transition: background-color 0.15s ease, border-color 0.15s ease;
+  }
+  
+  .btn-payflow-outline:hover {
+    background: #b2beb515;
+    border-color: #7393b3;
+  }
